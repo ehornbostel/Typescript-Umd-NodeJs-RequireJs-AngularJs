@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src="/javascripts/lib/requirejs.js"></script>
+    <script src="/javascripts/init.js"></script>
+</head>
+<body ng-cloak>
+<h1><%= title %></h1>
+<p>Welcome to <%= title %></p>
+<div ng-controller="TestController as tc">
+    <div>Hi {{tc.user.name}} your ID is {{tc.user.id}}</div>
+    <button ng-click="tc.buttonClicked()">Click Me!</button>
+</div>
+</body>
+</html>
