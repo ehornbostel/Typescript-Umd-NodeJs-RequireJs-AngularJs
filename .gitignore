@@ -43,6 +43,7 @@ uploads
 *.js
 *.js.map
 !karma.conf.js.js
+!public/javascripts/init.js
 
 #bin directory
 bin/
